@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwind and daisyUI cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#487eb0]">
+
+
+    <div class="main_container w-[700px] h-[100vh] mx-auto pt-12">
+        <div>
+            <h3 class="uppercase text-center pb-4 text-2xl font-semibold text-white">Search your City name to get
+                your weather</h3>
+            <label class="input input-bordered flex items-center gap-2">
+                <input id="userInput" type="text" class="grow" placeholder="Search" />
+                <button onclick="searchHanldle()" id="searchBtn"
+                    class="bg-success py-3 px-4 text-white rounded-r-lg  -mr-4">Search</button>
+            </label>
+        </div>
+
+
+        <div class="weather_card bg-gray-700 rounded-2xl shadow-2xl shadow-gray-400 text-white  py-5 px-32 backdrop-blur-3xl bg-opacity-50 mt-12">
+
+            <h2 class="mt-5 text-2xl font-semibold">City Name: <span class="font-bold text-success text-3xl underline decoration-wavy" id="usersCityName">Dinajpur</span></h2>
+            <h1 class="mt-12 text-center text-5xl"> <span class="font-bold text-error" id="temperature">0</span>°C</h1>
+            <div class="flex items-center justify-between mt-20">
+                <h2 class="mt-5 text-2xl font-semibold">Feel Likes: <span class="text-2xl font-bold"
+                        id="feelLike">0</span>°C</h2>
+                <h2 class="mt-5 text-2xl font-semibold">Humidity: <span class="text-2xl font-bold"
+                        id="humidity">0</span>%</h2>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
